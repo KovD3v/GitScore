@@ -77,7 +77,13 @@ getTopThreeUsers(users).then((topThreeUsers) => {
 	}, 250);
 });
 
-function setElementTextContent(id, textContent) {
-	document.getElementById(id).textContent = textContent;
-	console.log(`document.getElementById(${id}).textContent = ${textContent};`);
-}
+
+        document.getElementById("1").textContent = topThreeUsers[0].username;
+        document.getElementById("2").textContent = topThreeUsers[1].username;
+        document.getElementById("3").textContent = topThreeUsers[2].username;
+
+        }, 1000);
+
+
+});
+
